@@ -10,7 +10,6 @@ void rabinKarp(char pattern[], char text[]){
 	int m = strlen(pattern);
 	int n = strlen(text);
 
-	std::cout << m+n << std::endl;
 	int p = 0; //hashvalue of pattern
 	int t = 0; //hashvalue of text
 
@@ -58,7 +57,7 @@ void rabinKarp(char pattern[], char text[]){
 
 int main(){
 	char pattern[] = "wassa";
-	char text[] = "wassa forwassawassa the wassa";
+	char text[] = "wassa for the wassa";
 
 	rabinKarp(pattern, text);
 
