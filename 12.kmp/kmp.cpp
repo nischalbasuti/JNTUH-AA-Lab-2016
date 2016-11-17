@@ -1,3 +1,5 @@
+//12.knuth-morris-pratt
+//
 #include <iostream>
 #include <cstring>
 using namespace std;

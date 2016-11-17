@@ -1,9 +1,11 @@
+//06.kruskal
+//
 #include<iostream>
 #include<conio.h>
 #include<stdlib.h>
 using namespace std;
 int cost[10][10],i,j,k,n,m,c,visit,visited[10],l,v,count,count1,vst,p;
- 
+
 int main()
 {
 int dup1,dup2;
@@ -44,7 +46,7 @@ dup1=p;
 for(p=1;p<=n;p++)
 if(cost[j][p]!=31999 && p!=i)
 dup2=p;
- 
+
 if(cost[dup1][dup2]==-1)
 continue;
 }
@@ -64,7 +66,7 @@ if(visited[i]==l)
 count++;
 if(visited[i]==k)
 count1++;
-} 
+}
 if(count==0)
 visited[++vst]=l;
 if(count1==0)
@@ -72,4 +74,3 @@ visited[++vst]=k;
 }
 return 0;
 }
-

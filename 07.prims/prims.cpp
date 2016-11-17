@@ -1,3 +1,5 @@
+//07.prims
+//
 #include <iostream>
 #include <conio.h>
 #define ROW 7
