@@ -4,7 +4,7 @@ class Kruskal{
 	private:
 		int graph[10][10];
 		int parent[10];
-		
+
 		int find(int);
 		int uni(int,int);//union
 	public:
@@ -42,9 +42,9 @@ Kruskal :: Kruskal(int g[10][10], int n){
 		u = find(u);
 		v = find(v);
 
-		if(uni(u,v)){
-			std::cout << ne 
-				<< ". Edge ("<<a<<","<<b<<")="<< min 
+		if(uni(u,v) == 1){
+			std::cout << ne
+				<< ". Edge ("<<a<<","<<b<<")="<< min
 				<< std::endl;
 			ne++;
 			mincost += min;
@@ -55,7 +55,7 @@ Kruskal :: Kruskal(int g[10][10], int n){
 }
 
 int Kruskal :: find(int i){
-	while(parent[i]){
+	while(parent[i] != 0){
 		i = parent[i];
 	}
 	return i;

@@ -52,7 +52,6 @@ LUD :: LUD(int q[20][20], int m){
 				}
 			}
 		}
-
 	}
 	int mult[20][20];
 	for(int i=0; i < n; i++){

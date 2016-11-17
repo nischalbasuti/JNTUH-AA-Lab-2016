@@ -78,7 +78,7 @@ int main(){
 		a[i] = temp;
 		i++;
 	}
-
+	
 	//std::cout << sizeof(a) << " "<< sizeof(a[0])<<std::endl;
 	Quicksort foobar(a, i);
 }
